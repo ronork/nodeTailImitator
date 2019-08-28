@@ -6,7 +6,6 @@ socket.onopen = function(e) {
 
 socket.onmessage = function(event) {
   var flData = JSON.parse(event.data);
-  console.log(flData);
   document.getElementById("result").innerHTML = "-----Tail-test.txt-------";
   flData.map((val)=>{
     var para = document.createElement("p");
