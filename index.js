@@ -7,7 +7,7 @@ process.argv[2]?count=Number(process.argv[2]):count=10;
 const getFileData = ()=>{
 let n = count,res=[];
 var testData = fs.readFileSync('test.txt', 'utf8').split('\n');
-while(n!=0 && testData.length>0){
+while(n>=0 && testData.length>0){
 res.push(testData.pop());
 n--;
 }
